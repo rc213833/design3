@@ -1,11 +1,15 @@
 body {
+	height: 65em; /*Height will need to be adjusted in an inline statement due to the behavior of the background image*/
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
 	background-image: -ms-linear-gradient(top, #fefdfa, #749c98);
 	background-image: -moz-linear-gradient(top, #fefdfa, #749c98);
 	background-image: -webkit-linear-gradient(top, #fefdfa, #749c98);
 	background-image: -o-linear-gradient(top, #fefdfa, #749c98);
+	/*background-size: 100%;*/
 	background-repeat: none;
-	background-size: cover;
-	width: 100%;
+	/*background-size: cover;*/
 }
 
 header {
@@ -18,9 +22,18 @@ header {
 	font-size: 22pt;
 }
 
+h2 {
+	text-align: left;
+	color: black;
+	/*font-weight: bold;*/
+	font-family: 'Radley', serif;
+	padding: 2px;
+	font-size: 18pt;
+}
+
 nav {
 	font-family: 'Khula', sans-serif;
-	border: solid #fefdfa 1px;
+	border: solid #fefdfa 3px;
 	background-color: #303131;
 	height: 380px;
 	width: 280px;
@@ -28,7 +41,7 @@ nav {
 	padding: 10px;
 	font-size: 15pt;
 	float: left;
-	margin-left: 230px;
+	margin-left: 170px;
 	color: #749c98;
 	border-radius: 10px;
 }
@@ -36,12 +49,16 @@ nav {
 #nav-home {
 	clear: both;
 	margin: auto;
+	width: ;
 }
 
 ol {
-	list-style-type: upper-roman;
+	list-style-type: decimal;
 	line-height: 35px;
 	margin: auto;
+	text-align: center;
+	list-style-position: inside; /*Centers the li number with the adjacent text*/
+	padding-right: 5px;
 }
 
 li {
@@ -61,15 +78,15 @@ li {
 	border-radius: 6px;
 }
 
-.a-p {
+a {
 	text-decoration: none;
 	color: #63585a;
 }
 
-.a-p:hover {
+a:hover {
 	text-decoration: underline;
 	background-color: #63585a;
-	color: #99a489;
+	color: #fefdfa;
 	transition: 0.5s;
 }
 
@@ -78,18 +95,18 @@ article {
 	font-family: 'Khula', sans-serif;
 	border-radius: 20px;
 	background-color: #99a489;
-	border: solid #303131 1px;
+	border: solid #303131 2px;
 }
 
 #text-one {
 	float: right;
 	margin: 10px;
-	margin-right: 230px;
+	margin-right: 170px;
 	padding: 5px;
 	width: 40%;
 }
 
-#spacer { 					/*Spacer not rendering in chrome? Between Upper elements and bottom article*/
+#spacer { /*Spacer not rendering in chrome? Between Upper elements and bottom article*/
 	width: 100%;
 	height: 100px;
 }
@@ -109,16 +126,18 @@ p {
 img {
 	padding: 5px;
 	margin: 5px;
-	border: solid #63585a 1px;
+	/*border: solid #63585a 1px;*/
 }
 
 footer {
 	text-align: center;
-	margin: 10px;
+	margin: auto;
 	margin-top: 30px;
 	padding: 5px;
 	color: #fefdfa;
 	font-family: 'Radley', serif;
+	font-weight: bold;
+	font-size: 15pt;
 }
 
 
